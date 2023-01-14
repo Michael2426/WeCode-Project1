@@ -1,23 +1,27 @@
 <script setup>
-//import HelloWorld from './components/HelloWorld.vue'
-import Netflix from './pages/Netflix.vue'
+// import HelloWorld from './components/HelloWorld.vue';
+import Netflix from './pages/Netflix.vue';
+import people from './pages/Tailwind.vue';
+import team from './pages/Hockey.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
+  <ul class="divide-y divide-gray-200">
+    <li v-for="person in people" :key="person.email" class="py-4 flex">
+      <img class="h-10 w-10 rounded-full" :src="person.image" alt="" />
+      <div class="ml-3">
+        <p class="text-sm font-medium text-gray-900">{{ person.name }}</p>
+        <p class="text-sm text-gray-500">{{ person.email }}</p>
+      </div>
+    </li>
+  </ul>
   <Netflix />
+  <people/>
+  <team/>
 </template>
 
 <style scoped>
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -27,5 +31,5 @@ import Netflix from './pages/Netflix.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
-}
+} */
 </style>

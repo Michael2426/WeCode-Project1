@@ -1,0 +1,39 @@
+.card>h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #43A047;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.nav-bar{
+    background-color: #43A047;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.nav-bar>h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
