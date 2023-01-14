@@ -15,6 +15,18 @@ const count = ref(0)
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <h1>Hallo, das ist eine Netflix Seite</h1>
+    <div class="navbar">
+      <div class="logo"/>
+      <img src="../assets/vue.svg" alt="logo" />
+      <h3>WeCode-Projects</h3>
+      <div class="hamburger"/>
+      <div class="placeholder"/>    
+      <div class="content">        
+        <nav>NavTitel</nav>
+        <nav>NavTitel</nav>
+        <nav>NavTitel</nav>
+      </div>      
+    </div>
   </div>
 </template>
 
