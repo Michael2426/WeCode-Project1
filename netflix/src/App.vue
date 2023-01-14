@@ -2,7 +2,6 @@
 // import HelloWorld from './components/HelloWorld.vue';
 import Netflix from './pages/Netflix.vue';
 import people from './pages/Tailwind.vue';
-import team from './pages/Hockey.vue';
 </script>
 
 <template>
@@ -17,7 +16,7 @@ import team from './pages/Hockey.vue';
   </ul>
   <Netflix />
   <people/>
-  <team/>
+  <!-- <team/> -->
 </template>
 
 <style scoped>
