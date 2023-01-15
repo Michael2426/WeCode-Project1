@@ -1,20 +1,7 @@
-<script setup>
-import { ref, Text } from 'vue'
 
-defineProps({
-  msg: String,
-})
-
-const count = ref(0);
-
-const materials = [
-  'Hydrogen',
-  'Helium',
-  'Lithium',
-  'Beryllium'
-];
-
-</script>
+<style>
+  @import "../assets/style/style.css";
+</style>
 
 <template>
   <h2>Netflix</h2>
@@ -22,7 +9,7 @@ const materials = [
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <hr/>
-    <input :value="Username" @input="event => text = event.target.value">
+    <input :value="Username" @input="materials.map(material => material.length)">
     <input :value="Password" @input="event => text = event.target.value">
     <input v-model="text">
     <input v-model="textarea">
@@ -46,8 +33,21 @@ const materials = [
   </div>
 </template>
 
-<style>
-  @import "../assets/style/style.css";
-</style>
 
+<script setup>
+import { ref, Text } from 'vue'
 
+defineProps({
+  msg: String,
+})
+
+const count = ref(0);
+
+const materials = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
+
+</script>
